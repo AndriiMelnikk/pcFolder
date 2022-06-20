@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    top: 30px;
+    position: absolute;
+    background-color: rgb(227, 220, 220);
+    z-index: 2;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid rgb(131, 130, 130);
+    transition: 0.3s;
+
+    &.active {
+        display: inline-block;
+    }
+
+    li span {
+        font-size: 0.9em;
+        display: block;
+        padding: 5px 0;
+        color: black;
+    }
+
+    hr {
+        margin: 5px 0;
+    }
+
+    .modalClose {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+    }
+
+    ul {
+        position: relative;
+        z-index: 4;
+    }
+
+
+}
+
+.phone {
+    width: 250px;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: scroll;
+    right: 0;
+
+
+}
+
+.setting {}
